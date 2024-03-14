@@ -1,36 +1,15 @@
-# backend:
-#   name: github
-#   repo: username/repo
-#   branch: master
-
-# collections:
-#   - name: posts
-#     label: Posts
-#     folder: _posts
-#     create: true
-#     fields:
-#       - {label: "Title", name: "title", widget: "string"}
-#       - {label: "Date", name: "date", widget: "datetime"}
-#       - {label: "Body", name: "body", widget: "markdown"}
-
 backend:
   name: github
-  repo: Mithu225/decap-test-01
-  branch: main # Branch to update (optional; defaults to master)
-  base_url: https://decap-oauth-vercel.vercel.app
-  auth_endpoint: /api/auth
-media_folder: public/content/images
-public_folder: /public/content/images
+  repo: username/repo
+  branch: master
+
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "content/blog"
+  - name: posts
+    label: Posts
+    folder: _posts
     create: true
-    slug: "{{year}}-{{month}}-{{slug}}"
-    editor:
-      preview: false
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
